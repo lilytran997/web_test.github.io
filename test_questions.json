@@ -1,0 +1,531 @@
+﻿[
+  {
+    "id": 1,
+    "question": "What is PHP?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "PHP is a web language based on scripts that allows developers to dynamically create generated web pages."
+      },
+      {
+        "id": 2,
+        "content": "PHP is a mobile language based on scripts that allows developers to dynamically create generated web pages."
+      },
+      {
+        "id": 3,
+        "content": "PHP is a web language based on scripts that allows developers to dynamically create generated designs."
+      },
+      {
+        "id": 4,
+        "content": "PHP is a web language based on designs that allows developers to dynamically create generated web pages."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What does the initials of PHP stand for ?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "PHP means PHP: Hypertext Preprocessor"
+      },
+      {
+        "id": 2,
+        "content": "PHP means PHP: Hyper Processing"
+      },
+      {
+        "id": 3,
+        "content": "PHP means PHP: Hypertext Procedure."
+      },
+      {
+        "id": 4,
+        "content": "PHP means PHP: Hyper Property"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Which programming language does PHP resemble to?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "PHP syntax resembles Perl and C"
+      },
+      {
+        "id": 2,
+        "content": "PHP syntax resembles C++"
+      },
+      {
+        "id": 3,
+        "content": "PHP syntax resembles Python"
+      },
+      {
+        "id": 4,
+        "content": "PHP syntax resembles JavaScript"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What is Open Source Software?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "Software in which the source codes are freely used, modify, and shared by anyone are called Open Source Software."
+      },
+      {
+        "id": 2,
+        "content": "Software in which the source codes are freely used by anyone but cannot be modify and share are called Open Source Software."
+      },
+      {
+        "id": 3,
+        "content": "Software in which the source codes are used only after be purchased but can be modify and share are called Open Source Software."
+      },
+      {
+        "id": 4,
+        "content": "Software in which the source codes are used freely after some times and have to purchase later but can be modify and share are called Open Source Software."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What is the difference between include(), require()",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "The include() statement includes and evaluates a specified line i.e. it will include a file based in the given path. require() does the same thing expect upon failure it will generate a fatal error and halt the script whereas include() will just gives a warning and allow script to continue."
+      },
+      {
+        "id": 2,
+        "content": "The require() statement require and evaluates a specified line i.e. it will require a file based in the given path. include() does the same thing expect upon failure it will generate a fatal error and halt the script whereas require() will just gives a warning and allow script to continue."
+      },
+      {
+        "id": 3,
+        "content": "The include() statement includes and evaluates a specified line i.e. it will include a file based in the given path. require() does the same thing expect upon failure it will not generate a fatal error and not halt the script whereas include() will just gives an alert and disallow script to continue."
+      },
+      {
+        "id": 4,
+        "content": "The include() statement includes and evaluates a specified line i.e. it will include a file based in the given path. require() does the same thing expect upon failure it will not generate a fatal error and not halt the script whereas include() will just throw an error and allow script to continue."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Differences between GET, POST and REQUEST methods ?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "The information is send via GET method in name/value pair and is URL encoded. The default GET has a limit of 512. The POST method transfers the information via HTTP Headers. The POST method does not have any restriction in data size to be sent. POST is used for sending data securely and ASCII and binary type’s data."
+      },
+      {
+        "id": 2,
+        "content": "The information is send via GET method in binary code and is Binary encoded.The default GET has a limit of 256. The POST method transfers the information via HTTP Headers. The POST method does not have any restriction in data size to be sent. POST is used for sending data securely and ASCII and binary type’s data."
+      },
+      {
+        "id": 3,
+        "content": "The information is send via GET method in name/value pair and is URL encoded. The default GET has a limit of 1024. The POST method transfers the information via HTTP Headers. The POST method have any restriction in data size to be sent , the limit is 512. POST is used for sending data securely and ASCII and binary type’s data."
+      },
+      {
+        "id": 4,
+        "content": "The information is send via GET method in binary code and is Binary encoded.The default GET has a limit of 512. The POST method transfers the information via HTTP Headers. The POST method does not have any restriction in data size to be sent. POST is used for sending data securely and ASCII and binary type’s data."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which are correct names for the four basically types of error in PHP?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "Parse Error,Fatal Error,Warning Error,Notice Error"
+      },
+      {
+        "id": 2,
+        "content": "Parse Error,Fatal Error,Database Error,Notice Error"
+      },
+      {
+        "id": 3,
+        "content": "Parse Error,Fatal Error,Warning Error,Missing Error"
+      },
+      {
+        "id": 4,
+        "content": "Minor Error,Fatal Error,Warning Error,Notice Error"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What is session and why do we use it?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "Session is a super global variable that preserve data across subsequent pages. Session uniquely defines each user with a session ID, so it helps making customized web application where user tracking is needed"
+      },
+      {
+        "id": 2,
+        "content": "Session is a super private variable that preserve data across subsequent pages. Session uniquely defines each user with a session ID, so it helps making customized web application where user tracking is needed"
+      },
+      {
+        "id": 3,
+        "content": "Session is a super private variable that preserve data across subsequent pages. Session uniquely defines each user with a user ID, so it helps making customized web application where user tracking is needed"
+      },
+      {
+        "id": 4,
+        "content": "Session is a super global variable that preserve data across subsequent pages. Session uniquely defines each user with a user ID, so it helps making customized web application where user tracking is needed"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What is cookie and why do we use it?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "Cookie is a small piece of information stored in client browser. It is a technique used to identify a user using the information stored in their browser (if already visited that website) . Using PHP we can both set and get COOKIE."
+      },
+      {
+        "id": 2,
+        "content": "Cookie is a large package of information stored in client browser. It is a technique used to identify a user using the information stored in their RAM (if already visited that website) . Using PHP we can both set and get COOKIE."
+      },
+      {
+        "id": 3,
+        "content": "Cookie is a small piece of information stored in client browser. It is a technique used to identify a user using the information stored in their RAM (if already visited that website) . Using PHP we can both set and get COOKIE."
+      },
+      {
+        "id": 4,
+        "content": "Cookie is a small piece of information stored in client browser. It is a technique used to identify a user using the information stored in their RAM (if already visited that website) . Using PHP we can both set and get COOKIE."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "How we know the total number of elements of Array?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "sizeof($array_var),count($array_var)"
+      },
+      {
+        "id": 2,
+        "content": "limit($array_var),range($array_var)"
+      },
+      {
+        "id": 3,
+        "content": "sizeof($array_var),range($array_var)"
+      },
+      {
+        "id": 4,
+        "content": "limit($array_var),count($array_var)"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What is the difference between explode() and split() functions?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "Split function splits string into array by regular expression. Explode splits a string into array by string."
+      },
+      {
+        "id": 2,
+        "content": "Split function splits a string into array by string. Explode splits string into array by regular expression."
+      },
+      {
+        "id": 3,
+        "content": "Split function merge array into string by regular expression. Explode merge an array into string by loop."
+      },
+      {
+        "id": 4,
+        "content": "Split function merge an array into string by loop. Explode merge array into string by regular expression."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "How to strip whitespace (or other characters) from the beginning and end of a string ?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "trim()"
+      },
+      {
+        "id": 2,
+        "content": "strip()"
+      },
+      {
+        "id": 3,
+        "content": "cut()"
+      },
+      {
+        "id": 4,
+        "content": "removeWhiteSpace()"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "How to set a page as a home page in a php based site?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "index.php is the default name of the home page in php based sites."
+      },
+      {
+        "id": 2,
+        "content": "main.php is the default name of the home page in php based sites."
+      },
+      {
+        "id": 3,
+        "content": "root.php is the default name of the home page in php based sites."
+      },
+      {
+        "id": 4,
+        "content": "source.php is the default name of the home page in php based sites."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "How to find the length of a string?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "strlen()"
+      },
+      {
+        "id": 2,
+        "content": "length()"
+      },
+      {
+        "id": 3,
+        "content": "count()"
+      },
+      {
+        "id": 4,
+        "content": "range()"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "What is the use of isset() in php?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "This function is used to determine if a variable is set and is not NULL"
+      },
+      {
+        "id": 2,
+        "content": "This function is used to determine if a variable is set and is NULL"
+      },
+      {
+        "id": 3,
+        "content": "This function is used to determine if a variable is not set and is not NULL"
+      },
+      {
+        "id": 4,
+        "content": "This function is used to determine if a variable is set and is NULL"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "What is the use of 'ksort' in php?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "It is used for sort an array by key in reverse order"
+      },
+      {
+        "id": 2,
+        "content": "It is used for sort an array by key in order"
+      },
+      {
+        "id": 3,
+        "content": "It is used for sort an array by value in order"
+      },
+      {
+        "id": 4,
+        "content": "It is used for sort an array by value in reverse order"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "How to delete a file from the system?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "Unlink() deletes the given file from the file system "
+      },
+      {
+        "id": 2,
+        "content": "Remove() deletes the given file from the file system "
+      },
+      {
+        "id": 3,
+        "content": "UnHyperlink() deletes the given file from the file system "
+      },
+      {
+        "id": 4,
+        "content": "Clear() deletes the given file from the file system "
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "What is the use of PEAR in php?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides structured library to the PHP users and also gives provision for package maintenance."
+      },
+      {
+        "id": 2,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides database structure to the PHP users and also gives provision for package maintenance."
+      },
+      {
+        "id": 3,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides database structure to the PHP users and also gives permission for database exploitation."
+      },
+      {
+        "id": 4,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides database structure to the PHP users and also gives provision for database exploitation."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "What is the use of PEAR in php?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides structured library to the PHP users and also gives provision for package maintenance."
+      },
+      {
+        "id": 2,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides database structure to the PHP users and also gives provision for package maintenance."
+      },
+      {
+        "id": 3,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides database structure to the PHP users and also gives permission for database exploitation."
+      },
+      {
+        "id": 4,
+        "content": "PEAR is known as PHP Extension and Application Repository. It provides database structure to the PHP users and also gives provision for database exploitation."
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "What is the difference between PHP and JavaScript?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "The difference lies with the execution of the languages. PHP is server side scripting language, which means that it can’t interact directly with the user. Whereas, JavaScript is client side scripting language, that is used to interact directly with the user."
+      },
+      {
+        "id": 2,
+        "content": "The difference lies with the execution of the languages. JavaScript is server side scripting language, which means that it can’t interact directly with the user. Whereas, PHP is client side scripting language, that is used to interact directly with the user."
+      },
+      {
+        "id": 3,
+        "content": "PHP & JavaScript are scripting languages that they can interact directly with the user and don't have any differences."
+      },
+      {
+        "id": 4,
+        "content": "PHP & JavaScript are scripting languages that they can interact directly with the user. However, JavaScript can only directly interact with the user by using a connection gateway."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "What is the difference between $message and $$message?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "The main difference between $message and $$message is that former one is a simple variable and later is a reference variable"
+      },
+      {
+        "id": 2,
+        "content": ". $$message is a variable with a fixed name and it consists of a fixed value. $messages contains the variable itself."
+      },
+      {
+        "id": 3,
+        "content": "The main difference between $$message and $message is that former one is a simple variable and later is a reference variable"
+      },
+      {
+        "id": 4,
+        "content": ". $message is a variable with a dynamic name and it consists of a fixed value. S$messages contains the variable itself."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "question": "What is the use of 'echo' in php?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "It is used to print a data in the webpage"
+      },
+      {
+        "id": 2,
+        "content": "It is used to clear a data in the webpage"
+      },
+      {
+        "id": 3,
+        "content": "It is used to lock a data in the webpage"
+      },
+      {
+        "id": 4,
+        "content": "It is used to duplicate a data in the webpage"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "question": "How to include a file to a php page?",
+    "correct_answers": "1",
+    "answers": [
+      {
+        "id": 1,
+        "content": "It is used to print a data in the webpage"
+      },
+      {
+        "id": 2,
+        "content": "It is used to clear a data in the webpage"
+      },
+      {
+        "id": 3,
+        "content": "It is used to lock a data in the webpage"
+      },
+      {
+        "id": 4,
+        "content": "It is used to duplicate a data in the webpage"
+      }
+    ]
+  }
+]
