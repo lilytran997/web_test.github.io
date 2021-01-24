@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_test/modules/home_page/src/ui/home_page_widget.dart';
+import 'package:web_test/modules/login/login_widget.dart';
 import 'package:web_test/utilities/globals.dart';
 
 void main() async{
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
