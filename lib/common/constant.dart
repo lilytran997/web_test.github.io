@@ -1,2 +1,3 @@
 
-final randomKey = "RANDOM_KEY";
+
+final int totalQuestion = 50;

@@ -1,21 +1,22 @@
 class QuestionDataModel {
   int id;
   String question;
-  String correctAnswers;
+  int correctAnswer;
   String answer;
   List<Answers> answers;
 
-  QuestionDataModel({this.id, this.question, this.correctAnswers, this.answers,this.answer});
+  QuestionDataModel({this.id, this.question, this.correctAnswer, this.answers,this.answer});
 
   QuestionDataModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     question = json['question'];
-    correctAnswers = json['correct_answers'];
+    correctAnswer = json['correct_answer'];
     if (json['answers'] != null) {
       answers = new List<Answers>();
       json['answers'].forEach((v) {
         answers.add(new Answers.fromJson(v));
       });
+      answers.shuffle();
     }
   }
 
@@ -23,7 +24,7 @@ class QuestionDataModel {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['id'] = this.id;
     data['question'] = this.question;
-    data['correct_answers'] = this.correctAnswers;
+    data['correct_answer'] = this.correctAnswer;
     if (this.answers != null) {
       data['answers'] = this.answers.map((v) => v.toJson()).toList();
     }

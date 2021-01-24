@@ -3,11 +3,9 @@ import 'dart:math';
 
 import 'package:flutter/services.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:web_test/common/constant.dart';
 import 'package:web_test/models/questions_data_model.dart';
 import 'package:web_test/utilities/base_bloc.dart';
-import 'package:web_test/utilities/globals.dart';
 
 class HomePageBloc extends BaseBloc{
 
@@ -38,20 +36,10 @@ class HomePageBloc extends BaseBloc{
           _listQuestionsData.add(QuestionDataModel.fromJson(element));
         });
       }
-      bool random = false;
       if(_listQuestionsData.length>0){
-        var rng = new Random();
-        if(Globals.prefs==null){
-          Globals.prefs = await SharedPreferences.getInstance();
-         random =  Globals.prefs.getBool(randomKey)??false;
-        }
-        print(random);
-        if(!random){
-          for (var i = 0; i < _listQuestionsData.length/2; i++) {
-            _listQuestionsRandom.add(_listQuestionsData[i]);
-            // _listQuestionsRandom.add(_listQuestionsData[rng.nextInt(_listQuestionsData.length)]);
-            print(_listQuestionsRandom.last.id);
-          }
+        _listQuestionsData.shuffle();
+        for (var i = 0; i < totalQuestion; i++) {
+          _listQuestionsRandom.add(_listQuestionsData[i]);
         }
         setListQuestions(_listQuestionsRandom);
         _length = _listQuestionsRandom.length;

@@ -81,7 +81,6 @@ push(BuildContext context, Widget screen,
   } else {
     name = screen.runtimeType.toString() + "Screen";
   }
-  print(name);
   return Navigator.of(context, rootNavigator: root)
       .push(CustomRoute(page: screen, opaque: opaque, isHero: isHero));
 }
