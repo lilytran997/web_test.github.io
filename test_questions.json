@@ -1148,5 +1148,442 @@
         "content":"PHP includes many single inheritances, it means that a class can be extended from many classes using the keyword ‘included’."
       }
     ]
+  },
+  {
+    "id":52,
+    "question":"What is the meaning of a final class and a final method?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"‘final’ is introduced in PHP5. Final class means that this class cannot be extended and a final method cannot be overrided."
+      },
+      {
+        "id":2,
+        "content":"‘final’ is introduced in PHP4. Final class means that this class cannot be extended and a final method cannot be overrided."
+      },
+      {
+        "id":3,
+        "content":"‘final’ is introduced in PHP4. Final class means that this class can be extended and a final method cannot be overrided."
+      },
+      {
+        "id":4,
+        "content":"‘final’ is introduced in PHP5. Final class means that this class can be extended and a final method cannot be overrided."
+      }
+    ]
+  },
+  {
+    "id":53,
+    "question":"How can PHP and HTML interact?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"It is possible to generate HTML through PHP scripts, and it is possible to pass informations from HTML to PHP."
+      },
+      {
+        "id":2,
+        "content":"It is possible to generate PHP through HTML scripts, and it is possible to pass informations from PHP to HTML."
+      },
+      {
+        "id":3,
+        "content":"PHP is another name for HTML which is called by the infrastructure engineers."
+      },
+      {
+        "id":4,
+        "content":"PHP is an framework created for HTML, PHP script is HTML script."
+      }
+    ]
+  },
+  {
+    "id":54,
+    "question":"How can PHP and Javascript interact?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"PHP and Javascript cannot directly interacts since PHP is a server side language and Javascript is a client side language. PHP is able to generate Javascript code to be executed by the browser and it is possible to pass specific variables back to PHP via the URL"
+      },
+      {
+        "id":2,
+        "content":"PHP and Javascript cannot directly interacts since PHP is a server side language and Javascript is a client side language. PHP is able to translate PHP code to Javascript code to be executed by the browser and it is possible to pass specific variables back to PHP via the URL"
+      },
+      {
+        "id":3,
+        "content":"PHP and Javascript cannot directly interacts since PHP is a server side language and Javascript is a client side language. PHP is able to generate Javascript code to be executed by the browser however it is impossible to pass specific variables back to PHP via the URL"
+      },
+      {
+        "id":4,
+        "content":"PHP and Javascript cannot directly interacts since PHP is a server side language and Javascript is a client side language. PHP is not able to generate Javascript code to be executed by the browser however it is possible to pass specific variables back to PHP via the URL"
+      }
+    ]
+  },
+  {
+    "id":55,
+    "question":"What is needed to be able to use image function?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"GD library is needed to be able execute image functions"
+      },
+      {
+        "id":2,
+        "content":"IMAGE library is needed to be able execute image functions"
+      },
+      {
+        "id":3,
+        "content":"IMR library is needed to be able execute image functions"
+      },
+      {
+        "id":4,
+        "content":"PID library is needed to be able execute image functions"
+      }
+    ]
+  },
+  {
+    "id":56,
+    "question":"What is the use of the function ‘imagetypes()’?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"imagetypes() gives the image format and types supported by the current version of GD-PHP."
+      },
+      {
+        "id":2,
+        "content":"imagetypes() gives the image format and describe the list colors created the image."
+      },
+      {
+        "id":3,
+        "content":"imagetypes() gives the image format and types of data insist when creating the image."
+      },
+      {
+        "id":4,
+        "content":"imagetypes() gives the image format and percent of transparency of the image."
+      }
+    ]
+  },
+  {
+    "id":57,
+    "question":"What are the functions to be used to get the image’s properties (size, width and height)?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"getimagesize() for size, imagesx() for width and imagesy() for height."
+      },
+      {
+        "id":2,
+        "content":"getsize() for size, imagewidth() for width and imagesheight() for height."
+      },
+      {
+        "id":3,
+        "content":"getxy() for size, imagesx() for width and imagesy() for height."
+      },
+      {
+        "id":4,
+        "content":"getimage() for size, imagewidth() for width and imagesheight() for height."
+      }
+    ]
+  },
+  {
+    "id":58,
+    "question":"In how many ways we can retrieve the data in the result set of MySQL using PHP?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"mysql_fetch_row"
+      },
+      {
+        "id":2,
+        "content":"mysql_get_row"
+      },
+      {
+        "id":3,
+        "content":"mysql_select_row"
+      },
+      {
+        "id":4,
+        "content":"mysql_view_row"
+      }
+    ]
+  },
+  {
+    "id":59,
+    "question":"In how many ways we can retrieve the data in the result set of MySQL using PHP?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"mysql_fetch_array"
+      },
+      {
+        "id":2,
+        "content":"mysql_get_array"
+      },
+      {
+        "id":3,
+        "content":"mysql_select_array"
+      },
+      {
+        "id":4,
+        "content":"mysql_view_array"
+      }
+    ]
+  },
+  {
+    "id":60,
+    "question":"In how many ways we can retrieve the data in the result set of MySQL using PHP?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"mysql_fetch_object"
+      },
+      {
+        "id":2,
+        "content":"mysql_get_object"
+      },
+      {
+        "id":3,
+        "content":"mysql_select_object"
+      },
+      {
+        "id":4,
+        "content":"mysql_view_object"
+      }
+    ]
+  },
+  {
+    "id":61,
+    "question":"In how many ways we can retrieve the data in the result set of MySQL using PHP?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"mysql_fetch_assoc"
+      },
+      {
+        "id":2,
+        "content":"mysql_get_assoc"
+      },
+      {
+        "id":3,
+        "content":"mysql_select_assoc"
+      },
+      {
+        "id":4,
+        "content":"mysql_view_assoc"
+      }
+    ]
+  },
+  {
+    "id":62,
+    "question":"How can we extract string ‘gmail.com ‘ from a string student.windywinter@gmail.com using regular expression of PHP?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"preg_match(”/^http://invalid.invalid/@(.+)$/”,’student.windywinter@gmail.com’,$found);echo $found[1];"
+      },
+      {
+        "id":2,
+        "content":"preg_match(”/^http://invalid.invalid/@(.+*)$/”,’student.windywinter@gmail.com’,$found);echo $found[1];"
+      },
+      {
+        "id":3,
+        "content":"preg_match(”/^http://invalid.invalid/@(.+)$$/”,’student.windywinter@gmail.com’,$found);echo $found[1];"
+      },
+      {
+        "id":4,
+        "content":"preg_match(”/^http://invalid.invalid/@(.+$)$/”,’student.windywinter@gmail.com’,$found);echo $found[1];"
+      }
+    ]
+  },
+  {
+    "id":63,
+    "question":"How can we create a database using PHP and MySQL?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"mysql_create_db(“Database Name”)."
+      },
+      {
+        "id":2,
+        "content":"mysql_init_db(“Database Name”)."
+      },
+      {
+        "id":3,
+        "content":"mysql_int_db(“Database Name”)."
+      },
+      {
+        "id":4,
+        "content":"mysql_start_db(“Database Name”)."
+      }
+    ]
+  },
+  {
+    "id":64,
+    "question":"What is meant by URLencode?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"URLencode returns a string in which all non-alphanumeric characters except -_. have been replaced with a percent (%) sign followed by two hex digits and spaces encoded as plus (+) signs."
+      },
+      {
+        "id":2,
+        "content":"URLencode returns a string in which all non-alphanumeric characters except -_. have been replaced with a dot (.) sign followed by two hex digits and spaces encoded as plus (+) signs."
+      },
+      {
+        "id":3,
+        "content":"URLencode returns a string in which all non-alphanumeric characters except -_. have been replaced with a comma (,) sign followed by two hex digits and spaces encoded as plus (+) signs."
+      },
+      {
+        "id":4,
+        "content":"URLencode returns a string in which all non-alphanumeric characters except -_. have been replaced with a bracket ({}) sign followed by two hex digits and spaces encoded as plus (+) signs."
+      }
+    ]
+  },
+  {
+    "id":65,
+    "question":"What is meant by URLdecode?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"URLdecode decodes any %## encoding in the given string"
+      },
+      {
+        "id":2,
+        "content":"URLdecode decodes any %$$ encoding in the given string"
+      },
+      {
+        "id":3,
+        "content":"URLdecode decodes any %.. encoding in the given string"
+      },
+      {
+        "id":4,
+        "content":"URLdecode decodes any %,, encoding in the given string"
+      }
+    ]
+  },
+  {
+    "id":66,
+    "question":"What is the difference between the functions unlink and unset?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"unlink() deletes the given file from the file system.\nunset() makes a variable undefined"
+      },
+      {
+        "id":2,
+        "content":"unlink() makes a variable undefined.\nunset() deletes the given file from the file system"
+      },
+      {
+        "id":3,
+        "content":"unlink() hides the given file from the file system.\nunset() makes a variable undefined"
+      },
+      {
+        "id":4,
+        "content":"unlink() makes a variable undefined.\nunset() hides the given file from the file system"
+      }
+    ]
+  },
+  {
+    "id":67,
+    "question":"How to stop the execution of the php script?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"exit()"
+      },
+      {
+        "id":2,
+        "content":"close()"
+      },
+      {
+        "id":3,
+        "content":"terminate()"
+      },
+      {
+        "id":4,
+        "content":"done()"
+      }
+    ]
+  },
+  {
+    "id":68,
+    "question":"What is a CAPTCHA?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"CAPTCHA is the short form of Completely Automated Public Turing Test."
+      },
+      {
+        "id":2,
+        "content":"CAPTCHA is the short form of Complexity Automated Public Turing Test."
+      },
+      {
+        "id":3,
+        "content":"CAPTCHA is the short form of Complexity Automated Private Turing Test."
+      },
+      {
+        "id":4,
+        "content":"CAPTCHA is the short form of Completely Automated Private Turing Test."
+      }
+    ]
+  },
+  {
+    "id":69,
+    "question":"When do you use CAPTCHA?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"We use CAPTCHAS for general form submissions, registrations, user generated content and so on to prevent spam bots from clogging up the system or spamming."
+      },
+      {
+        "id":2,
+        "content":"We use CAPTCHAS for general form submissions, registrations, user generated content and so on to prevent spamming from users."
+      },
+      {
+        "id":3,
+        "content":"We use CAPTCHAS for general form submissions, registrations, user generated content and so on to prevent creating injection data from users' actions."
+      },
+      {
+        "id":4,
+        "content":"We use CAPTCHAS for general form submissions, registrations, user generated content and so on to prevent exploiting data from users' actions."
+      }
+    ]
+  },
+  {
+    "id":70,
+    "question":"Is it possible to know details about the browser being used to view a PHP website?",
+    "correct_answer":1,
+    "answers":[
+      {
+        "id":1,
+        "content":"We can use the get_browser() function to get the details of the browser a user is using."
+      },
+      {
+        "id":2,
+        "content":"We can use the get_web_browser() function to get the details of the browser a user is using."
+      },
+      {
+        "id":3,
+        "content":"We can use the get_web_info() function to get the details of the browser a user is using."
+      },
+      {
+        "id":4,
+        "content":"We can use the get_browser_info() function to get the details of the browser a user is using."
+      }
+    ]
   }
 ]
