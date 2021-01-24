@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:web_test/modules/home_page/src/ui/home_page_widget.dart';
 import 'package:web_test/modules/login/login_desktop_widget.dart';
+import 'package:web_test/utilities/check_platform.dart';
 import 'package:web_test/utilities/globals.dart';
 import 'package:web_test/utilities/responsive.dart';
 
@@ -22,6 +24,9 @@ class _LoginPageState extends State<LoginPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    if(Globals.prefs==null){
+      SharedPreferences.getInstance().then((value) => Globals.prefs = value);
+    }
   }
 
   @override
@@ -136,7 +141,7 @@ class _LoginPageState extends State<LoginPage> {
                 margin: EdgeInsets.only(
                     top: Globals.maxPadding, bottom: Globals.minPadding),
                 child: Text(
-                  "Login",
+                  "Windy Winter Examination",
                   style: TextStyle(
                       fontSize: Globals.maxPadding,
                       fontWeight: FontWeight.w600,
@@ -145,18 +150,51 @@ class _LoginPageState extends State<LoginPage> {
                 )),
             _inputItem(
                 null, _emailController, _emailNode, _passwordNode, true, false,
-                isPhone: true, hint: "Username"),
+                isPhone: true, hint: "Full Name"),
             _inputItem(
-                null, _passwordController, _passwordNode, null, true, true,
-                hint: "Password"),
+                null, _passwordController, _passwordNode, null, true, false,isPhone: true,
+                hint: "ID Number"),
             InkWell(
-              onTap: () {
-                Navigator.of(context, rootNavigator: true)
-                    .popUntil((route) => route.isFirst);
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                );
+              onTap: () async {
+                String fullName = _emailController.value.text ?? "";
+                String idNumber = _passwordController.value.text ?? "";
+                if(fullName == "") {
+                  showCustomAlertDialog(
+                    context,
+                    "Warning!",
+                    "You have to input your the Full Name!",
+                    cancelable: false,);
+                }
+                else if(idNumber == "") {
+                  showCustomAlertDialog(
+                    context,
+                    "Warning!",
+                    "You have to input your the ID Number!",
+                    cancelable: false,);
+                }
+                else {
+                  if(Globals.prefs==null){
+                    Globals.prefs = await SharedPreferences.getInstance();
+                  }
+                  bool isDone = Globals.checkUserId(idNumber);
+                  if (isDone) {
+                    showCustomAlertDialog(
+                      context,
+                      "Warning!",
+                      "You have already done the examination!",
+                      cancelable: false,);
+                  }
+                  else {
+                    Globals.idNumber = idNumber;
+                    Globals.fullName = fullName;
+                    Navigator.of(context, rootNavigator: true)
+                        .popUntil((route) => route.isFirst);
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  }
+                }
               },
               child: Container(
                 margin: EdgeInsets.only(
@@ -172,7 +210,7 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(8.0)),
                 child: Center(
                   child: Text(
-                    "Login",
+                    "Start Examination",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 14.0,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:web_test/common/constant.dart';
 import 'package:web_test/utilities/responsive.dart';
 
 class Globals{
@@ -12,14 +13,9 @@ class Globals{
   static SharedPreferences prefs;
   static double tabbarSize;
 
-  static String userName = "";
-  static String iBBLocationName = "";
-  static String email = "";
-  static String phoneNumber = "";
-  static int locationId = 0;
+  static String fullName = "";
+  static String idNumber = "";
   static ApplicationMode _applicationMode;
-  static String versionName = "";
-  static String keyKong = "";
 
   init({BuildContext context, ApplicationMode model}){
    if(context!=null){
@@ -52,12 +48,19 @@ class Globals{
    }
     SharedPreferences.getInstance().then((event) => prefs = event);
   }
-  static String getKongTokenURL = "https://sapi.fpt.vn/token/GenerateToken";
-  static String checkContainHTTP(String base, String url) {
-    if( url.contains('http')){
-    } else {
+  static bool checkUserId(String idNumber) {
+    if( prefs != null){
+      String point = prefs.getString(userIdKey + idNumber) ?? "";
+      return point == "" ? false : true;
     }
-    return url.contains('http') ? url : base + url;
+    return false;
+  }
+
+  static saveDoneId(String point) async {
+    if( prefs == null){
+      prefs = await SharedPreferences.getInstance();
+    }
+    prefs.setString((userIdKey + idNumber), point);
   }
 
 }

@@ -93,14 +93,15 @@ class _HomePageState extends State<HomePage> {
                                             if (!isCompleted) {
                                               showCustomAlertDialog(
                                                   context,
-                                                  "Thông báo",
-                                                  "Bạn chưa chọn hết đáp án, vui lòng kiểm tra lại!",
+                                                  "Warning!",
+                                                  "You haven't done all the question, let's review again!",
                                                 cancelable: false,);
                                             } else {
+                                              Globals.saveDoneId("$result");
                                               showCustomAlertDialog(
                                                   context,
-                                                  "Chúc mừng!",
-                                                  "Bạn đã trả lời chính xác $result đáp án!",
+                                                  "Congratulation ${Globals.fullName}!",
+                                                  "You had $result right answers!",
                                                   cancelable: false,
                                                   buttonLeft: CustomOptionDialog("",Colors.transparent,(){},Colors.transparent));
                                             }
